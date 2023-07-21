@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply text-paragraphy text-base font-sans;
+    }
+    h1, h2, h3, h4, h5, h6{
+        @apply text-heading font-semibold font-serif;
+    }
+
+    h1{
+        @apply text-5xl;
+    }
+    h2{
+        @apply text-4xl;
+    }
+    h3{
+        @apply text-3xl;
+    }
+    h4{
+        @apply text-2xl;
+    }
+    h5{
+        @apply text-xl;
+    }
+    h6{
+        @apply text-lg;
+    }
+}
+.owl-nav button {
+    @apply !text-4xl !leading-none;
+}
+.owl-nav {
+    @apply flex justify-between absolute top-[50%] w-full;
+}
+
+
+/* js */
+
+.accordion h1 {
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 32px;
+}
+.accordion h2 {
+	font-family: Merriweather;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+.accordion P{
+	font-family: Nunito;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+
+
+}
+.accordion li{
+    padding: 5px 0;
+}
+.a-title::after {
+	content: "+";
+	position: absolute;
+	top: 12px;
+	right: 0;
+	font-size: 30px;
+    @apply text-heading
+}
+.a-title.active::after {
+	content: "-";
+}
+.plus {
+	position: relative;
+}
+.bg-primary.px-2.py-3.mt-5.text-white.rounded-md {
+	font-family: Nunito;
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 18px;
+}
+.ttmp{
+    background: #E9EDF1;
+}
+
+
+.single-step:nth-child(2n) .step-image {
+	/* order: 3; */
+    @apply md:order-3
+}
+h1 {
+	font-family: Merriweather;
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 48px;
+}
+p {
+    font-family: Nunito;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+p{
+    @apply md:text-xl
+}
+h1 {
+    @apply md:text-4xl
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .header-menu {
+	display: flex;
+	justify-content: space-between;
+} */
+
+
+
+
+
+
+/* murad manu button */
+
+.h-menu li a{
+    @apply  text-white hover:text-primary;
+}
+.about-font-img{
+    @apply max-w-[434px] w-full h-full right-0 ;
+}
+.header-menu .h-menu{
+    @apply flex gap-x-16  items-center ;
+}
+.header-menu .h-menu ul {
+    @apply  block md:flex gap-x-10 ;
+}
+.mobile-menu .h-menu li a{
+    @apply  text-white hover:text-heading font-semibold;
+}
+.mobile-menu {
+    @apply rounded-l-md absolute right-0 bg-primary w-52 h-64 py-3 px-5 z-30;
+}
+.mobile-menu .h-menu ul li {
+    @apply py-2 border-b-2 border-black;
+}
+ 
+
+.menutrigger span {
+    @apply h-[2px] w-[30px] bg-white block;
+}
+.menutrigger span:nth-child(2) {
+    margin: 6px 0;
+}
+.menutrigger.active span:nth-child(2) {
+    opacity: 0;
+}
+.menutrigger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-7px) translateX(4px);
+}
+.menutrigger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(7px) translateX(4px);
+}
+
+/* go top button */
+.go-top {
+    @apply fixed bg-primary z-10 bottom-10 w-10 h-10 right-5 flex items-center justify-center text-white rounded-full cursor-pointer;
+}
